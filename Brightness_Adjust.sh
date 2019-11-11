@@ -3,7 +3,7 @@
 #
 #>Run this as sudo, since it writes to the /etc/ dir.
 #
-#>This is a script to adjust the brightness and also has an option to use the Night-Light feature enabled by 'redshift' cli. 
+#>This is a script to adjust the brightness and also has an option to use the Night-Light feature enabled by 'redshift' cli.
 #
 #>The brightness adjust method only works for intel based laptops, since I personally use a thinkpad with integrated intel HD 4000 graphics.
 #
@@ -22,12 +22,14 @@ echo
 while [ "$brightness" -le 4882 ]
 do
 	echo "$brightness" > /sys/class/backlight/intel_backlight/brightness
-	read -p "Do you want to enable Night Light? If so press 'y', or 'n' to exit this script :: " nightlight
+	read -p "Do you want to enable Night Light? This requires := redshift =: to be installed.
+	If so press 'y', or 'n' to exit this script :: " nightlight
 
 		if [ $nightlight == y ]
 		then
-			printf "What value do you want to set? Recommended is 3400. Any value between 1000 and 4000 KCal is acceptable."
-			read -p "\nEnter your choice: " choice
+			printf "What value do you want to set? Recommended is 3400."
+			echo " Any value between 1000 and 4000 KCal is acceptable."
+			read -p " Enter your choice: " choice
 			redshift -P -O "$choice" 2>&1 /dev/null
 
 		elif [ $nightlight == n ]
