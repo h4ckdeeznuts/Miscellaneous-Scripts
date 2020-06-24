@@ -2,6 +2,7 @@
 # RobustRename.sh
 # This script is to be used when renaming a batch of files, eg. for backing up purposes.
 # This script will also then aid in reverting the rename of the files.
+# In the filename with wildcard input, give input like " tor* " in case of wanting to rename all files starting with the name "tor"
 
 
 
