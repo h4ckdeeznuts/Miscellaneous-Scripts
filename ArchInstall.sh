@@ -1,11 +1,11 @@
-    # By - Kushagra
-    # Twitter - h4ckdeeznuts
-    # Email - shubhamdeeznuts@gmail.com
-    # Script to automate installation of Arch Linux. Make sure you have two partitions made via cfdisk or any other utility
-    # This is for UEFI Booting only.
-    # (Note: In VirtualBox choose EFI mode)
-    # Run this script after initializing your EFI partition of 512 MB and your second desired partition
-    # After rebooting, log in as root and execute the following commands --
+# By - Kushagra
+# Twitter - h4ckdeeznuts
+# Email - shubhamdeeznuts@gmail.com
+# Script to automate installation of Arch Linux. Make sure you have two partitions made via cfdisk or any other utility
+# This is for UEFI Booting only.
+# (Note: In VirtualBox choose EFI mode)
+# Run this script after initializing your EFI partition of 512 MB and your second desired partition
+# After rebooting, log in as root and execute the following commands --
     #    useradd -m -g users -G wheel $YOUR_USERNAME
     #    passwd $YOUR_USERNAME
     #    EDITOR=vim visudo
