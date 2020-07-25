@@ -1,5 +1,8 @@
 Bunch of Helpful Scripts for daily use whether in normal usage or CTFs. Will add as I make some.
 
+	ArchInstall - 	To automate the installation of Arch Linux. Usage (sudo) -- bash ArchInstall.sh /dev/sda1 /dev/sda2
+			Also downloads Luke Smith's larbs.sh in the /root/ directory for more customizations.
+
 	BinHexOct__To__ASCII - To convert Binary, Hexadeximal or Octal numbers to its corresponding ASCII form. eg -> Hexadecimal 0x65 converts to ASCII "a"
 	
 	BrightnessAdjust - To vary the Screen Brightness on Intel based systems with internal Graphics. (eg. Intel HD)
