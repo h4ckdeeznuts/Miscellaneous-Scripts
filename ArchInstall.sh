@@ -30,7 +30,7 @@ if [ $? -eq 0 ]; then
 fi
 
     # Installing the system
-pacstrap /mnt base linux # linux-firmware linux-headers base-devel
+pacstrap /mnt base linux linux-firmware linux-headers base-devel
 
 `genfstab -U -p /mnt >> /mnt/etc/fstab`
 
