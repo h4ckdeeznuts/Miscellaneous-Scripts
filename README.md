@@ -5,6 +5,8 @@ Bunch of Helpful Scripts for daily use whether in normal usage or CTFs. Will add
 
 	BinHexOct__To__ASCII - To convert Binary, Hexadeximal or Octal numbers to its corresponding ASCII form. eg -> Hexadecimal 0x65 converts to ASCII "a"
 	
+	bluetoothConnect - For running -- " bash bluetoothConnect.sh -c "To connect to bluetooth device from your Linux device. Requires bluez-utils package 				installed to enable bluetoothctl functionality.
+	
 	BrightnessAdjust - To vary the Screen Brightness on Intel based systems with internal Graphics. (eg. Intel HD)
 	(This additional feature requires "redshift" installed) Also as a bonus I've included a night light enabling functionality.
 	
