@@ -1,17 +1,22 @@
 # Required Package ---- bluez; bluez-utils
-#
+# A simple CLI based script to connect to your Bluetooth devices. Default timeout for searching can be changed.
 
 #!/bin/bash
 
 arg=$1
 
 function chkPkg() {
+    if [ -z "$(pacman -Qs bluez-utils)" ]
+    then
+        echo "You need to have -- bluez-utils -- package installed in order for this to work."
+        exit
+    fi
 
 }
 
 function powerOn() {
 
-    echo 'power on' | bluetoothctl > /dev/null
+    bluetoothctl <<< x power on
 
 }
 
@@ -52,6 +57,7 @@ fi
 
 }
 
+chkPkg
 powerOn
 main
 powerCycle
